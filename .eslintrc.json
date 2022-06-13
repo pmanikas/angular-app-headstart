@@ -19,6 +19,7 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
+        "indent": 2, // 4 spaces indentation
         "@angular-eslint/directive-selector": [
           "error",
           {

@@ -1,6 +1,60 @@
 {
+    // Spacing
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    // Files
+    "files.exclude": {
+        "**/*.log": true,
+        "**/*.log*": true,
+        "**/dist": true,
+        "**/coverage": true
+    },
+    "files.associations": {
+        ".markdownlintrc": "jsonc"
+    },
+
+    // Event triggers
+    "editor.formatOnSave": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.run": "onSave",
+    "eslint.options": {
+        "extensions": [".html", ".js", ".ts"]
+    },
+    "eslint.format.enable": true,
+	"eslint.validate": [
+		"javascript",
+		"typescript",
+        "html"
+	],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+
+    // HTML
+    "html.format.enable": true,
+    "html.format.indentInnerHtml": true,
+
+    // JS(ON)
+    "javascript.format.enable": false,
+    "json.format.enable": false,
+
+    // CSS
     "stylelint.enable": true,
     "css.validate": false,
     "scss.validate": false,
-    "stylelint.validate": ["scss"]
+    "stylelint.validate": ["scss"],
+
+    // THEME
+    "workbench.colorCustomizations": {
+		"statusBar.background": "#f7511e",
+		"statusBar.foreground": "#ffffff",
+		"titleBar.activeBackground": "#f7511e",
+		"titleBar.activeForeground": "#ffffff"
+	}
 }
