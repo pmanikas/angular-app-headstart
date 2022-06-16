@@ -52,9 +52,18 @@
 
     // THEME
     "workbench.colorCustomizations": {
-		"statusBar.background": "#f7511e",
-		"statusBar.foreground": "#ffffff",
-		"titleBar.activeBackground": "#f7511e",
-		"titleBar.activeForeground": "#ffffff"
+		"statusBar.background": "#111111",
+		"statusBar.foreground": "#139d91",
+		"titleBar.activeBackground": "#111111",
+		"titleBar.activeForeground": "#139d91",
+        "titleBar.inactiveBackground": "#139d91",
+        "titleBar.inactiveForeground": "#111111",
+        "activityBar.background": "#131313",
+        "activityBar.foreground": "#139d91",
+        "activityBarBadge.background": "#139d91",
+        "activityBarBadge.foreground": "#111111",
+        "sideBar.background": "#222222",
+        "sideBarSectionHeader.background": "#151515",
+        "sideBarSectionHeader.foreground": "#139d91"
 	}
 }

@@ -4,6 +4,7 @@
         "stylelint-config-prettier-scss"
     ],
     "rules": {
+        "no-empty-source": null,
         "indentation": 4,
         "string-quotes": "single",
         "no-duplicate-selectors": true,
