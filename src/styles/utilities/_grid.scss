@@ -1,0 +1,38 @@
+@use './../abstracts/mixins' as mix;
+@use './../abstracts/breakpoints' as *;
+@use 'sass:math';
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^='col-'] {
+    flex-basis: 100%;
+}
+
+$columns: 12;
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        flex: 0 1 (math.div(100%, (math.div($columns, $i))));
+    }
+
+    .col-offset-#{$i} {
+        margin-left: (math.div(100%, (math.div($columns, $i))));
+    }
+}
+
+@each $key, $value in $breakpoints {
+    @include mix.mq($key) {
+        @for $i from 1 through $columns {
+            .col-#{$key}-#{$i} {
+                flex: 0 1 (math.div(100%, (math.div($columns, $i))));
+            }
+
+            .col-offset-#{$key}-#{$i} {
+                margin-left: (math.div(100%, (math.div($columns, $i))));
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.test-grid [class^='col-'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    border: 1px solid rgb(0 0 0 / 20%);
+
+    &::after {
+        content: attr(class);
+    }
+}
